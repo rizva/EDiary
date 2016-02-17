@@ -16,14 +16,7 @@ if(isset($_POST['passchange'])){
         
         
     }else{
-       function change_password($id, $password){
-              $password = md5($password);
-              $sql9 = "UPDATE users SET password='$password' WHERE id='$id'";
-         
-              $result = mysqli_query($this->db,$sql9) or die(mysqli_connect_errno()."Password cannot be uptadet"); 
-               return $result; 
-          }    
-         
+      echo "success";
     }
   
     }
